@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="calc-top">
+          <h1 class="calc-title">calc</h1>
+          <div class="calc-theme">
+            <h4>theme</h4>
+            <div class="calc-toggle">
+              <div class="theme-number">
+                <span>1</span><span>2</span><span>3</span>
+              </div>
+              <div class="toggle-btn">
+                <span class="indicator"></span>
+                <div class="theme-1" onclick="changeTheme('theme-one')"></div>
+                <div class="theme-2" onclick="changeTheme('theme-two')"></div>
+                <div class="theme-3" onclick="changeTheme('theme-three')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="screen">
+          <form name="calc">
+            <input type="text" name="text" id="screen" readonly />
+          </form>
+        </div>
+
+        <div class="buttons">
+          <input type="button" value="7" onclick="display('7')" class="btn" />
+          <input type="button" value="8" onclick="display('8')" class="btn" />
+          <input type="button" value="9" onclick="display('9')" class="btn" />
+          <input
+            type="button"
+            value="DEL"
+            onclick="deleteValue()"
+            class="btn delete"
+          />
+          <input type="button" value="4" onclick="display('4')" class="btn" />
+          <input type="button" value="5" onclick="display('5')" class="btn" />
+          <input type="button" value="6" onclick="display('6')" class="btn" />
+          <input type="button" value="+" onclick="display('+')" class="btn" />
+          <input type="button" value="1" onclick="display('1')" class="btn" />
+          <input type="button" value="2" onclick="display('2')" class="btn" />
+          <input type="button" value="3" onclick="display('3')" class="btn" />
+          <input type="button" value="-" onclick="display('-')" class="btn" />
+          <input type="button" value="." onclick="display('.')" class="btn" />
+          <input type="button" value="0" onclick="display('0')" class="btn" />
+          <input type="button" value="/" onclick="display('/')" class="btn" />
+          <input type="button" value="x" onclick="display('*')" class="btn" />
+          <div class="footer-buttons">
+            <input
+              type="button"
+              value="RESET"
+              onclick="clearScreen()"
+              class="footer-btn clear"
+            />
+            <input
+              type="button"
+              value="="
+              onclick="calculate()"
+              class="footer-btn equals"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="name">Nika Merebashvili</a>.
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

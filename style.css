@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  color: hsl(221, 14%, 31%);
+  font-weight: 700;
+}
+:root {
+  --text-color: #fff;
+  --btn-color: hsl(221, 14%, 31%);
+
+  --main-bg: hsl(222, 26%, 31%);
+  --toggle-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+
+  --key-bg: hsl(30, 25%, 89%);
+  --key-shadow: hsl(28, 16%, 65%);
+
+  --equal-btn: hsl(6, 63%, 50%);
+  --equal-shadow: hsl(6, 70%, 34%);
+
+  --option-btn: hsl(225, 21%, 49%);
+  --option-shadow: hsl(224, 28%, 35%);
+}
+:root.theme-two {
+  --text-color: #000;
+  --btn-color: hsl(221, 14%, 31%);
+
+  --main-bg: hsl(0, 0%, 90%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+
+  --key-bg: hsl(45, 7%, 89%);
+  --key-shadow: hsl(35, 11%, 61%);
+
+  --equal-btn: hsl(25, 98%, 40%);
+  --equal-shadow: hsl(25, 99%, 27%);
+
+  --option-btn: hsl(185, 42%, 37%);
+  --option-shadow: hsl(185, 58%, 25%);
+}
+:root.theme-three {
+  --text-color: hsl(52, 100%, 62%);
+  --btn-color: hsl(52, 100%, 62%);
+
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  --key-bg: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+
+  --equal-btn: hsl(176, 100%, 44%);
+  --equal-shadow: hsl(177, 92%, 70%);
+
+  --option-btn: hsl(281, 89%, 26%);
+  --option-shadow: hsl(285, 91%, 52%);
+}
+body {
+  background-color: var(--main-bg);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-container {
+  width: 375px;
+
+  padding: 15px 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: var(--screen-bg);
+  margin-bottom: 20px;
+  text-align: right;
+  color: var(--text-color);
+  font-size: 30px;
+  padding: 10px;
+  overflow: hidden;
+  border: none;
+}
+#screen:focus {
+  outline: none;
+}
+
+h4 {
+  color: var(--text-color);
+  font-size: 10px;
+}
+.buttons {
+  background-color: var(--toggle-bg);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 10px;
+}
+.btn {
+  flex: 0 0 22%;
+  margin: 0;
+  width: 60px;
+  height: 62px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 3px solid var(--key-shadow);
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+.footer-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-btn {
+  width: 150px;
+  height: 65px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 25px;
+}
+.delete {
+  background-color: var(--option-btn);
+  color: var(--text-color);
+  border-bottom: 3px solid var(--option-shadow);
+}
+.clear {
+  background-color: var(--option-btn);
+  color: var(--text-color);
+  border-bottom: 3px solid var(--option-shadow);
+}
+.equals {
+  background-color: var(--equal-btn);
+  color: var(--text-color);
+  border-bottom: 3px solid var(--equal-shadow);
+}
+.calc-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.calc-title {
+  color: var(--text-color);
+  font-size: 30px;
+}
+.calc-theme {
+  display: flex;
+  align-items: flex-end;
+}
+.calc-theme h4 {
+  color: var(--text-color);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.calc-toggle {
+  margin-left: 15px;
+}
+.theme-number {
+  font-size: 15px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-around;
+}
+span {
+  color: var(--text-color);
+}
+.toggle-btn {
+  width: 70px;
+  height: 25px;
+  background-color: var(--toggle-bg);
+  border-radius: 999px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2 ease;
+}
+.indicator {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: var(--equal-btn);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  bottom: 3px;
+  pointer-events: none;
+  transition: all 0.2 ease;
+}
+.toggle-btn > div {
+  width: 33.33%;
+  cursor: pointer;
+}
+.attribution {
+  color: var(--text-color);
+  margin-top: 20px;
+}
+.attribution a {
+  color: var(--text-color);
+}
