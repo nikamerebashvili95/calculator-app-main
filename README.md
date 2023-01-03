@@ -24,7 +24,7 @@ This is a solution to the [Calculator app on Frontend Mentor](https://www.fronte
 ### Links
 
 - Solution URL: [Solution](https://github.com/nikamerebashvili95/interactive-card-details-form-main)
-- Live Site URL: [GitHub Live URL]https://github.com/nikamerebashvili95/calculator-app-main)
+- Live Site URL: [GitHub Live URL](https://github.com/nikamerebashvili95/calculator-app-main)
 
 ## My process
 
