@@ -10,7 +10,7 @@ This is a solution to the [Calculator app on Frontend Mentor](https://www.fronte
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 
 ## Overview
